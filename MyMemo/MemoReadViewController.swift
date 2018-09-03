@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontBlaster
 
 class MemoReadViewController: UIViewController {
     var param: MemoData?
@@ -24,6 +25,12 @@ class MemoReadViewController: UIViewController {
         let dateString = formatter.string(from: (param?.regdata)!)
         
         self.navigationItem.title = dateString
+
+        FontBlaster.debugEnabled = true
+        FontBlaster.blast { (fonts) -> Void in
+            print("Loaded Fonts", fonts)
+        }
+        contents.font = UIFont(name: "SDMiSaeng", size: 20)
 
         // Do any additional setup after loading the view.
     }

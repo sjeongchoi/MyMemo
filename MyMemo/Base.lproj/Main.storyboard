@@ -131,8 +131,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqT-g9-Jnt">
-                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqT-g9-Jnt">
+                                <rect key="frame" x="16" y="69" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="trc-0v-N5d"/>
                                 </constraints>
@@ -140,25 +140,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="내용" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-z3-Cb7">
-                                <rect key="frame" x="16" y="121" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="내용" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-z3-Cb7">
+                                <rect key="frame" x="16" y="100" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7U-u3-lJN">
-                                <rect key="frame" x="16" y="168" width="250" height="250"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7U-u3-lJN">
+                                <rect key="frame" x="16" y="177" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Vkj-4h-Pcj" firstAttribute="trailing" secondItem="NqT-g9-Jnt" secondAttribute="trailing" id="NJf-pu-edU"/>
-                            <constraint firstItem="XPM-z3-Cb7" firstAttribute="top" secondItem="NqT-g9-Jnt" secondAttribute="bottom" constant="20" id="Qtz-vs-cz8"/>
-                            <constraint firstItem="Vkj-4h-Pcj" firstAttribute="trailing" secondItem="XPM-z3-Cb7" secondAttribute="trailing" id="UUy-2d-1Oo"/>
-                            <constraint firstItem="NqT-g9-Jnt" firstAttribute="top" secondItem="Vkj-4h-Pcj" secondAttribute="top" constant="16" id="gCf-gk-c3P"/>
-                            <constraint firstItem="H7U-u3-lJN" firstAttribute="top" secondItem="XPM-z3-Cb7" secondAttribute="bottom" constant="20" id="tB4-0i-oGz"/>
-                            <constraint firstItem="XPM-z3-Cb7" firstAttribute="leading" secondItem="Vkj-4h-Pcj" secondAttribute="leading" id="wnz-6C-rgR"/>
-                            <constraint firstItem="NqT-g9-Jnt" firstAttribute="leading" secondItem="Vkj-4h-Pcj" secondAttribute="leading" id="yrk-to-p1f"/>
+                            <constraint firstItem="NqT-g9-Jnt" firstAttribute="top" secondItem="Vkj-4h-Pcj" secondAttribute="top" constant="5" id="TyR-v5-jLb"/>
+                            <constraint firstItem="XPM-z3-Cb7" firstAttribute="top" secondItem="NqT-g9-Jnt" secondAttribute="bottom" constant="10" id="VWY-ja-rOd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vkj-4h-Pcj"/>
                     </view>
