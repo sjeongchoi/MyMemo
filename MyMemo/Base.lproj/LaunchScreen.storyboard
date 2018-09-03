@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5XZ-5B-wsC">
-                                <rect key="frame" x="96" y="468.5" width="173" height="30"/>
+                                <rect key="frame" x="96" y="468.5" width="192" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SWIFT STUDY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKy-5l-mQ4">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SWIFT STUDY!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKy-5l-mQ4">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
