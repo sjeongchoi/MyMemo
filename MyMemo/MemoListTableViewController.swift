@@ -26,8 +26,11 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
     
     func customView(forEmptyDataSet scrollView: UIScrollView) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
-        view.backgroundColor = .red
+//        view.backgroundColor = .red
+        let image = UIImage(named: "no_found.png")
+        let imageView = UIImageView(image: image!)
         
+        view.addSubview(imageView)
         return view
     }
 
