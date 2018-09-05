@@ -1,16 +1,20 @@
 PODS:
+  - EmptyDataSet-Swift (4.0.5)
   - FontBlaster (4.0.3)
 
 DEPENDENCIES:
+  - EmptyDataSet-Swift (~> 4.0.5)
   - FontBlaster
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - EmptyDataSet-Swift
     - FontBlaster
 
 SPEC CHECKSUMS:
+  EmptyDataSet-Swift: a25810f50c3adfaa3840aa33ae8b5ba12ac29279
   FontBlaster: f18031f5dde2ce689f5330e7005edfe3c0815957
 
-PODFILE CHECKSUM: fe6168cdc23f6b50f882bb049ce553207e4bf48c
+PODFILE CHECKSUM: b8c889f0db5607f792642efda47949b3fdf8f592
 
 COCOAPODS: 1.5.3
