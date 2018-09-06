@@ -21,6 +21,8 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
     }
 
     override func viewWillAppear(_ animated: Bool) {
+
+        //데이터를 다시 읽어들임.
         self.tableView.reloadData()
     }
     
@@ -52,7 +54,7 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        cell.regdate?.text = formatter.string(from: row.regdata!)
+        cell.regdate?.text = formatter.string(from: row.regdate!)
 
         return cell
     }
@@ -67,5 +69,5 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
 }

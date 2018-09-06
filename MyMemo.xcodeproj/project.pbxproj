@@ -29,6 +29,7 @@
 		55BCECAD213D852E000944D6 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BCECA5213D852E000944D6 /* Icon-App-40x40@2x.png */; };
 		55BCECB0213D9ABA000944D6 /* SDMiSaeng.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BCECAF213D9ABA000944D6 /* SDMiSaeng.ttf */; };
 		55BCECB4213F8ED3000944D6 /* no_found.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BCECB3213F8ED2000944D6 /* no_found.png */; };
+		55BCECB821418243000944D6 /* MemoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCECB721418243000944D6 /* MemoDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		55BCECA5213D852E000944D6 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
 		55BCECAF213D9ABA000944D6 /* SDMiSaeng.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDMiSaeng.ttf; sourceTree = "<group>"; };
 		55BCECB3213F8ED2000944D6 /* no_found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_found.png; sourceTree = "<group>"; };
+		55BCECB721418243000944D6 /* MemoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDAO.swift; sourceTree = "<group>"; };
 		7F123414451D9DFD7D3F96C3 /* Pods-MyMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMemo/Pods-MyMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE3732A9CA46ACB77B76CB5 /* Pods_MyMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4D49235ACF18C7BD3648F1 /* Pods-MyMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMemo/Pods-MyMemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				55BCEC91213D2662000944D6 /* MemoReadViewController.swift */,
 				55BCEC93213D2821000944D6 /* MemoCell.swift */,
 				55BCEC95213D676A000944D6 /* MemoData.swift */,
+				55BCECB721418243000944D6 /* MemoDAO.swift */,
 			);
 			path = MyMemo;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				55BCEC90213D264C000944D6 /* MemoFormViewController.swift in Sources */,
 				55BCEC81213D16DD000944D6 /* MyMemo.xcdatamodeld in Sources */,
+				55BCECB821418243000944D6 /* MemoDAO.swift in Sources */,
 				55BCEC92213D2662000944D6 /* MemoReadViewController.swift in Sources */,
 				55BCEC96213D676A000944D6 /* MemoData.swift in Sources */,
 				55BCEC79213D16DD000944D6 /* AppDelegate.swift in Sources */,

@@ -39,7 +39,7 @@ class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate,
         data.title = self.subject
         data.contents = self.contents.text
         data.image = self.preview.image
-        data.regdata = Date()
+        data.regdate = Date()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.memolist.append(data)
@@ -49,9 +49,9 @@ class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBAction func pick(_ sender: Any) {
         let select = UIAlertController(title: "이미지를 가져올 곳을 선택해주세요.", message: nil, preferredStyle: .actionSheet)
-        select.addAction(UIAlertAction(title: "카메라", style: .default) { (_) in
-            self.presentPicker(source: .camera)
-        })
+//        select.addAction(UIAlertAction(title: "카메라", style: .default) { (_) in
+//            self.presentPicker(source: .camera)
+//        })
         select.addAction(UIAlertAction(title: "저장앨범", style: .default) { (_) in
             self.presentPicker(source: .savedPhotosAlbum)
         })
