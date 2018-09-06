@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     var subject: String!
@@ -27,12 +28,12 @@ class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBAction func save(_ sender: Any) {
         guard self.contents.text?.isEmpty == false else {
-            //TODO : alert
-            let alert = UIAlertController(title: nil,
-                                          message: "내용을 입력해주세요",
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true)
+//            let alert = UIAlertController(title: nil,
+//                                          message: "내용을 입력해주세요",
+//                                          preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//            self.present(alert, animated: true)
+            SCLAlertView().showError("Error", subTitle: "내용을 입력해주세요")
             return
         }
         

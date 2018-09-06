@@ -7,8 +7,7 @@ target 'MyMemo' do
 
   # Pods for MyMemo
   pod 'FontBlaster'
-  # pod 'DZNEmptyDataSet'
   pod 'EmptyDataSet-Swift', '~> 4.0.5'
-  #pod 'RealmSwift'
+  pod 'SCLAlertView'
 
 end

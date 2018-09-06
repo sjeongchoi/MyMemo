@@ -1,20 +1,24 @@
 PODS:
   - EmptyDataSet-Swift (4.0.5)
   - FontBlaster (4.0.3)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
   - EmptyDataSet-Swift (~> 4.0.5)
   - FontBlaster
+  - SCLAlertView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - EmptyDataSet-Swift
     - FontBlaster
+    - SCLAlertView
 
 SPEC CHECKSUMS:
   EmptyDataSet-Swift: a25810f50c3adfaa3840aa33ae8b5ba12ac29279
   FontBlaster: f18031f5dde2ce689f5330e7005edfe3c0815957
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: 2122d1b3e054af8806705843fd9de13a53435cbf
+PODFILE CHECKSUM: 1c6f23b976f1f15d18cd10a71537524b517abe08
 
 COCOAPODS: 1.5.3
