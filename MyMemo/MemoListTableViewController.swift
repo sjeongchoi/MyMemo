@@ -11,6 +11,9 @@ import EmptyDataSet_Swift
 
 class MemoListTableViewController: UITableViewController, EmptyDataSetSource, EmptyDataSetDelegate {
     
+    //추가
+    lazy var dao = MemoDAO()
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -21,7 +24,10 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
     }
 
     override func viewWillAppear(_ animated: Bool) {
-
+        //추가
+        //코에 데이터에 저장된 값을 가져옴
+        self.appDelegate.memolist = self.dao.fetch()
+        
         //데이터를 다시 읽어들임.
         self.tableView.reloadData()
     }
@@ -70,4 +76,17 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .delete
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let data = self.appDelegate.memolist[indexPath.row]
+        
+        // 코어 데이터에서 삭제한 다음, 배열 내 데이터 및 테이블 뷰 행을 차례로 삭제한다.
+        if dao.delete(data.objectID!) {
+            self.appDelegate.memolist.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
