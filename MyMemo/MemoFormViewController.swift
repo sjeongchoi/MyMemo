@@ -10,7 +10,7 @@ import UIKit
 
 class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     var subject: String!
-    //추가 start
+
     lazy var dao = MemoDAO()
     
     @IBOutlet var contents: UITextView!
@@ -43,11 +43,6 @@ class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate,
         data.image = self.preview.image
         data.regdate = Date()
         
-        //어차피 memolist 배열 역시 코어 데이터를 통해 값을 읽어와야함. 불필요하기 때문에 삭제
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        appDelegate.memolist.append(data)
-        
-        //추가
         self.dao.insert(data)
         
         _ = self.navigationController?.popViewController(animated: true)

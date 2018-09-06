@@ -18,14 +18,18 @@ class MemoDAO {
     
     
     //저장된 메모 전체를 가져오기
-    
-    func fetch() -> [MemoData] {
+    func fetch(keyword text: String? = nil) -> [MemoData] {
         var memolist = [MemoData]()
         
         let fetchRequest: NSFetchRequest<MemoMO> = MemoMO.fetchRequest()
         
         let regdataDesc = NSSortDescriptor(key: "regdate", ascending: false)
         fetchRequest.sortDescriptors = [regdataDesc]
+        
+        //추가
+        if let t = text, t.isEmpty == false {
+            fetchRequest.predicate = NSPredicate(format: "contents CONTAINS[c] %@", t)
+        }
         
         do {
             let resultset = try self.context.fetch(fetchRequest)

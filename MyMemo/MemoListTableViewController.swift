@@ -9,9 +9,9 @@
 import UIKit
 import EmptyDataSet_Swift
 
-class MemoListTableViewController: UITableViewController, EmptyDataSetSource, EmptyDataSetDelegate {
+class MemoListTableViewController: UITableViewController, EmptyDataSetSource, EmptyDataSetDelegate, UISearchBarDelegate {
+    @IBOutlet var searchBar: UISearchBar!
     
-    //추가
     lazy var dao = MemoDAO()
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -21,11 +21,12 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
  
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
+        
+        searchBar.enablesReturnKeyAutomatically = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        //추가
-        //코에 데이터에 저장된 값을 가져옴
+        //코어 데이터에 저장된 값을 가져옴
         self.appDelegate.memolist = self.dao.fetch()
         
         //데이터를 다시 읽어들임.
@@ -88,5 +89,11 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
             self.appDelegate.memolist.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let keyword = searchBar.text
+        self.appDelegate.memolist = self.dao.fetch(keyword: keyword)
+        self.tableView.reloadData()
     }
 }
