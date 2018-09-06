@@ -9,5 +9,6 @@ target 'MyMemo' do
   pod 'FontBlaster'
   # pod 'DZNEmptyDataSet'
   pod 'EmptyDataSet-Swift', '~> 4.0.5'
+  pod 'RealmSwift'
 
 end
