@@ -52,7 +52,7 @@ class MemoListTableViewController: UITableViewController, EmptyDataSetSource, Em
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        cell.regdate?.text = formatter.string(from: row.regdata!)
+        cell.regdate?.text = formatter.string(from: row.regdate!)
 
         return cell
     }
