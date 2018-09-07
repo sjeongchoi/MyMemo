@@ -21,7 +21,7 @@ class MemoReadViewController: UIViewController {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "dd일 HH:mm분에 작성됨"
-        let dateString = formatter.string(from: (param?.regdata)!)
+        let dateString = formatter.string(from: (param?.regdate)!)
         
         self.navigationItem.title = dateString
 
