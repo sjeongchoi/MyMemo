@@ -24,8 +24,8 @@ class MemoDAO {
         
         let fetchRequest: NSFetchRequest<MemoMO> = MemoMO.fetchRequest()
         
-        let regdataDesc = NSSortDescriptor(key: "regdate", ascending: false)
-        fetchRequest.sortDescriptors = [regdataDesc]
+        let regdateDesc = NSSortDescriptor(key: "regdate", ascending: false)
+        fetchRequest.sortDescriptors = [regdateDesc]
         
         do {
             let resultset = try self.context.fetch(fetchRequest)
