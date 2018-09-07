@@ -39,7 +39,7 @@ class MemoFormViewController: UIViewController, UIImagePickerControllerDelegate,
         data.title = self.subject
         data.contents = self.contents.text
         data.image = self.preview.image
-        data.regdata = Date()
+        data.regdate = Date()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.memolist.append(data)
